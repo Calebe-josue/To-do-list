@@ -20,6 +20,7 @@ def cabecalho(msg):
     print(msg.center(42))
     print(linha())
 
+
 def menu(lista):
     while True:
         #Faz todo um menu enumerado e retorna isso.

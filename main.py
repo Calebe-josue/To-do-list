@@ -1,15 +1,17 @@
 from time import sleep
 from arquivo import*
 from funções import*
-
-arquivo='To-do-list.txt'
+import os
+arquivo='lista_de_tarefas.json'
 
 if not arquivoExiste(arquivo):
     #Verifica se o arquivo existe.Se não existe, cria um novo.
     criarArquivo(arquivo)
     
 while True:
-    op=menu(['Visualizar Tarefas','Adicionar Tarefas','Remover tarefas','Concluir tarefas','Sair'])
+    sleep(3)
+    os.system('cls')
+    op=menu(['Visualizar Tarefas','Adicionar Tarefas','Remover tarefas','Concluir tarefas','Histórico de tarefas concluídas','Sair'])
     if op is None:
         continue
     elif op==1:
@@ -29,6 +31,9 @@ while True:
         sleep(1)
         concluir(arquivo)
     elif op==5:
+        sleep(1)
+        historico(arquivo)
+    elif op==6:
         #Opção de sair do programa.
         sleep(1)
         print('-----FIM DO PROGRAMA-----')
