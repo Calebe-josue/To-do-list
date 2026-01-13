@@ -3,7 +3,7 @@ from arquivo import*
 from funções import*
 import os
 
-lista_de_tarefas=ToDolist('lista_de_tarefas.json')
+lista_de_tarefas=ToDoList('lista_de_tarefas.json')
 
 if not lista_de_tarefas.arquivoExiste():
     #Verifica se o arquivo existe.Se não existe, cria um novo.
