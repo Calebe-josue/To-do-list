@@ -2,7 +2,7 @@ from funções import*
 from time import sleep
 import json
 
-class Todolist:
+class ToDolist:
     def __init__(self,arquivo):
         self.arquivo = arquivo
         
