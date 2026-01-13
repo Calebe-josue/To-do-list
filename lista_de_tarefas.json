@@ -1,8 +1,9 @@
 {
     "tarefas": [
-        "Banhar"
+        "Programar"
     ],
     "concluidas": [
-        "programar"
+        "programar",
+        "Banhar"
     ]
 }

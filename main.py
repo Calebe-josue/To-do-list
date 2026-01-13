@@ -2,11 +2,11 @@ from time import sleep
 from arquivo import*
 from funções import*
 import os
-arquivo='lista_de_tarefas.json'
+lista_de_tarefas=Todolist('lista_de_tarefas.json')
 
-if not arquivoExiste(arquivo):
+if not lista_de_tarefas.arquivoExiste():
     #Verifica se o arquivo existe.Se não existe, cria um novo.
-    criarArquivo(arquivo)
+    lista_de_tarefas.criarArquivo()
     
 while True:
     sleep(3)
@@ -17,22 +17,22 @@ while True:
     elif op==1:
         #Opção de Visualizar a To-do-list.
         sleep(1)
-        ler_arquivo(arquivo)
+        lista_de_tarefas.ler_arquivo()
     elif op==2:
         #Opção de adicionar tarefa na To-do-list.
         sleep(1)
-        adicionar(arquivo)
+        lista_de_tarefas.adicionar()
     elif op==3:
         #Opção de remover tarefa da To-do-list.
         sleep(1)
-        remover(arquivo)
+        lista_de_tarefas.remover()
     elif op==4:
         #Opção de concluir tarefas da to-do-list.
         sleep(1)
-        concluir(arquivo)
+        lista_de_tarefas.concluir()
     elif op==5:
         sleep(1)
-        historico(arquivo)
+        lista_de_tarefas.historico()
     elif op==6:
         #Opção de sair do programa.
         sleep(1)
