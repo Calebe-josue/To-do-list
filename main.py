@@ -2,6 +2,7 @@ from time import sleep
 from arquivo import*
 from funções import*
 import os
+
 lista_de_tarefas=Todolist('lista_de_tarefas.json')
 
 if not lista_de_tarefas.arquivoExiste():

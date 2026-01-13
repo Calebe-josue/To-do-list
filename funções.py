@@ -1,4 +1,5 @@
 from time import sleep
+
 def leiaint(msg):
     try:
         a = int(input(msg))
