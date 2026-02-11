@@ -1,4 +1,4 @@
-# To-Do List em Python 📝
+# To-Do List em Python
 
 Uma aplicação de linha de comando para gerenciamento de tarefas, construída com **Python**.
 Permite adicionar, remover, concluir tarefas e visualizar histórico de tarefas concluídas, utilizando **POO** e **persistência em arquivo JSON**.
